@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*************/
+/*** FONTS ***/
+/*************/
+
+
+
+header {
+      height : 60rem;
+      background-image: url("/images/earth_2.jpg");
+        background-size: cover;
+        background-position : center;
+        background-repeat: no-repeat;
+      
+   
+        
+}
+
+
+
+header .home_links {
+        width : 100vw;
+        z-index: 2;
+        height : 8rem;
+        background-color: rgba(0, 0, 0 , 0.7);
+}
+header .home_links img {
+        text-align: center;
+}
+
+header .home_links a{
+        display: inline-block;
+        font-family: 'Archivo Narrow', sans-serif;
+        color : grey;
+        padding: 1rem ;
+        margin : 2rem;
+        font-size: 1rem;
+        
+        text-decoration: none;
+        
+}
+header .home_links a:hover {
+    
+    
+         text-decoration: underline white;;
+    
+}
+
+header .home_links #fromEtoM{
+    
+    margin-right: 3rem;  
+    font-size: 1.4rem;
+}
+header .center_texte {
+    color: white;
+    
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+header .center_texte h1 {
+    font-size: 32px;
+    margin-top : 5rem;
+    letter-spacing: 1rem;
+    
+    
+}
+header .center_texte p {
+   text-align: center;
+    margin-top : 2rem;
+    width : 80rem;
+    font-size: 24px;
+    letter-spacing: 0.5rem;
+   
+}
+
+
+body {
+    height : 100rem;
+    background-image: url("/images/stars-1920x1080.jpg");
+    background-size: contain;
+}
+
+main {
+    color : white;  
+    display : flex;
+    flex-direction: column  ;
+    font-family: 'Archivo Narrow', sans-serif;
+    
+}
+
+.ligne_verticale{
+    
+    margin-left: 50%;
+    position: absolute;
+    width:5rem;
+    border-left:10px solid rgba(255, 255, 255 , 0.7);
+    height:80%;
+}
+.JulesVerne {
+    display : flex;
+    flex-direction: column;
+    width :90%;
+   
+}
+.JulesVerne p{
+    width : 30rem;
+    align-self: flex-end;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    
+}
+.JulesVerne img{
+    align-self: flex-end;
+    
+}
+.JulesVerne h1{
+    align-self: flex-end;
+    
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1rem;
+}
+.La_chine{
+    display : flex;
+    flex-direction: column;
+    width :90%;
+}
+.La_chine p{
+    width :30rem;
+    align-self: flex-end;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+}
+.La_chine img{
+    align-self: flex-end;
+    
+}
+.La_chine h1{
+    align-self: flex-end;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    
+}
+.Apollo {
+    display : flex;
+    flex-direction: column;
+    width :90%;
+   
+}
+.Apollo p{
+    width : 30rem;
+    align-self: flex-start;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    
+}
+.Apollo img{
+    align-self: flex-start;
+    
+}
+.Apollo h1{
+    align-self: flex-start;
+    
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1rem;
+}
+
+footer{
+    background-image: url("images/moon.jpg");
+    background-size: cover;
+    height: 30rem;
+}
+footer .footer_imgs{
+    display: inline-block;
+}
