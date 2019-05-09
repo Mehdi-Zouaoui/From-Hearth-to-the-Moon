@@ -1,8 +1,10 @@
 var camera, scene, renderer, controls;
 var mesh;
+let t = 1;
+let r  = 35;
 init();
 animate();
-
+moon_path();
 
 
 function init() {
@@ -55,31 +57,35 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
     //
+    
+
+}
 
 
-
+function moon_path(){
+  
+    moon.position.z = r*Math.sin(THREE.Math.degToRad(t));
+    moon.position.x = r*Math.cos(THREE.Math.degToRad(t));
 }
 
 
 function animate() {
 
-    const t = (Date.now() / 1000);
-
+    t += 1;
     requestAnimationFrame(animate);
-
     controls.update();
     //const date  = new Date() ;
 
 
-    console.log(Math.sin(t));
+    console.log(r*Math.sin(THREE.Math.degToRad(t)));
 
 
     earth.rotation.y += 0.01;
     moon.rotation.y += 0.01;
-
-    moon.position.z += Math.sin(t);
-    moon.position.x += Math.cos(t);
+    
+   
 
     renderer.render(scene, camera);
+    moon_path();
 }
-
+   

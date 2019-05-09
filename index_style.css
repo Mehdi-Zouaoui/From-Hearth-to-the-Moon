@@ -52,16 +52,18 @@ table {
 
 
 header {
-      height : 60rem;
-      background-image: url("/images/earth_2.jpg");
-        background-size: cover;
-        background-position : center;
-        background-repeat: no-repeat;
-      
-   
-        
+      height : 10rem; 
+  
 }
-
+.index_header {
+    height: 60rem;
+    background-image: url("/images/earth_2.jpg");
+    background-size: cover;
+    background-position : center;
+    background-repeat: no-repeat;
+    
+    
+}
 
 
 header .home_links {
@@ -69,6 +71,7 @@ header .home_links {
         z-index: 2;
         height : 8rem;
         background-color: rgba(0, 0, 0 , 0.7);
+        position : fixed
 }
 header .home_links img {
         text-align: center;
@@ -97,9 +100,8 @@ header .home_links #fromEtoM{
     margin-right: 3rem;  
     font-size: 1.4rem;
 }
-header .center_texte {
+.center_texte {
     color: white;
-    
     display : flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +109,7 @@ header .center_texte {
 }
 header .center_texte h1 {
     font-size: 32px;
-    margin-top : 5rem;
+    margin-top : 15rem;
     letter-spacing: 1rem;
     
     
@@ -146,79 +148,116 @@ main {
 }
 .JulesVerne {
     display : flex;
+    align-self: flex-end;
     flex-direction: column;
-    width :90%;
+    width :50%;
+    margin-right : 10%;
    
 }
-.JulesVerne p{
-    width : 30rem;
-    align-self: flex-end;
-    font-size: 1rem;
-    letter-spacing: 0.5rem;
-    
-}
+
 .JulesVerne img{
     align-self: flex-end;
-    
+    margin-right : 4rem;
 }
 .JulesVerne h1{
     align-self: flex-end;
-    
+    margin-top : 2rem;
+    margin-right :1rem;
     font-size: 2rem;
     text-align: center;
     letter-spacing: 1rem;
 }
-.La_chine{
-    display : flex;
-    flex-direction: column;
-    width :90%;
-}
-.La_chine p{
-    width :30rem;
+.JulesVerne p{
+    margin-top : 2rem;
+    width : 20rem;
     align-self: flex-end;
     font-size: 1rem;
     letter-spacing: 0.5rem;
+    text-align: center;
+    
+    
+}
+.La_chine{
+    display : flex;
+    align-self: flex-end;
+    flex-direction: column;
+    width :50%;
+    margin-right : 10%;
+}
+.La_chine p{
+    width : 20rem;
+    margin-top : 2rem;
+    align-self: flex-end;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
 }
 .La_chine img{
     align-self: flex-end;
+    margin-right : 2rem;
     
 }
 .La_chine h1{
     align-self: flex-end;
+    margin-top : 2rem;
+    margin-right :2rem;
     font-size: 2rem;
+    text-align: center;
     letter-spacing: 1rem;
     
 }
 .Apollo {
     display : flex;
+    align-self: flex-start;
     flex-direction: column;
-    width :90%;
-   
+    width :50%;
+    margin-right : 10%;
 }
 .Apollo p{
-    width : 30rem;
+    width : 20rem;
+    margin-top : 2rem;
     align-self: flex-start;
     font-size: 1rem;
     letter-spacing: 0.5rem;
+    text-align: center;
     
 }
 .Apollo img{
     align-self: flex-start;
+    margin-left : 4rem;
     
 }
 .Apollo h1{
     align-self: flex-start;
-    
+    margin-top : 2rem;
+    margin-left :5rem;
     font-size: 2rem;
     text-align: center;
     letter-spacing: 1rem;
 }
 
 footer{
+    display :flex;
+    flex-direction: column;
     background-image: url("images/moon.jpg");
     background-size: cover;
-    height: 30rem;
+    height: 25rem;
+    width : 100vw;
+    font-family: 'Archivo Narrow', sans-serif;
+    color : grey;
+   
 }
-footer .footer_imgs{
-    display: inline-block;
+
+footer .footer_imgs {
+    
+   
+   align-items: center;
+}
+footer p{
+    align-self: center;
+    color : white;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    width : 50%;
 }
