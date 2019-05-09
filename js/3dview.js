@@ -28,7 +28,6 @@ function init() {
     const plane_4 = new THREE.Mesh(plane_geometry,plane_material);
     plane_2.rotation.y = Math.PI/2;
     plane_3.rotation.y = Math.PI/2;
-    
     plane.position.set(20,0,-200);
     plane_2.position.set(300,-50,200);
     plane_3.position.set(-500,-50,200);
