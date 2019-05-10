@@ -21,8 +21,8 @@ function init() {
 
     camera.position.set(0, 0, 100);
 
-    var light = new THREE.PointLight( 0xffffff, 2, 10000 );
-    var light_2 = new THREE.PointLight( 0xffffff, 2, 10000 );
+    var light = new THREE.PointLight( 0xffffff, 3, 10000 );
+    var light_2 = new THREE.PointLight( 0xffffff, 3, 10000 );
     var ambient_light = new THREE.AmbientLight( 0x606060 ); // soft white light
     scene.add( light );
     light.position.set( -10, 00, -50 );
@@ -54,7 +54,7 @@ function init() {
 
     /* Création de la Terre */
     const earth_texture = new THREE.TextureLoader().load('images/texture_earth-5400x2700.jpg');
-    const earth_geometry = new THREE.SphereGeometry(10, 16, 16);
+    const earth_geometry = new THREE.SphereGeometry(20, 16, 16);
     const earth_material = new THREE.MeshLambertMaterial({ map: earth_texture });
 
     earth = new THREE.Mesh(earth_geometry, earth_material);
@@ -63,11 +63,11 @@ function init() {
     scene.add(earth);
     
     const sun_texture = new THREE.TextureLoader().load('images/8k_sun.jpg');
-    const sun_geometry = new THREE.SphereGeometry(60, 16, 16);
+    const sun_geometry = new THREE.SphereGeometry(100, 16, 16);
     const sun_material = new THREE.MeshLambertMaterial({ map: sun_texture });
 
    sun = new THREE.Mesh(sun_geometry,sun_material);
-   sun.position.set(0, 150, -250);
+   sun.position.set(0, 150, -300);
 
     scene.add(sun);
     /* Création de la Lune */
@@ -107,7 +107,8 @@ function animate() {
     console.log(rayon * Math.sin(THREE.Math.degToRad(t)));
 
     earth.rotation.y += 0.01;
-    moon.rotation.y += 0.01;
+    moon.rotation.y -= 0.01;
+    //sun.rotation.y += 0.003;
 
     renderer.render(scene, camera);
 
