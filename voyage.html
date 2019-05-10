@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title> WebGL</title>
     <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="body.css">
 </head>
 
 <body>
@@ -16,10 +17,64 @@
                         <a href="index.html" id ="fromEtoM">From Earth to the Moon </a>
                         <a href="/3d_view.html" class="active">Accueil</a>
                         <a href="#">Présentation</a>
-                        <a href="#">Compétences</a>
+                        <a href="#">Compétences</a>x²
+
                
                 </nav>
 
         </header>
+
+        <main class =" voyage">
+        <div class ="voyage_txt">
+            <p>
+                    Faisons le voyage ensemble  A l’aide du slider, sélectionnez la vitesse que vous désirez pour  faire le voyage de la Terre à la Lune. <br>Nous calculerons pour vous la  durée du voyage et le mode de transport qui correspond. 
+            </p>
+
+        </div>
+        
+        <div class="slidecontainer">
+                <input type="range" min="10" max="5500" value="0" class="slider" id="myRange">
+                <p>Value: <span id="demo"></span></p>
+                <table>
+                        <tr>
+                          <td>Vehicules</td>
+                          <td> km/h</td>
+                        </tr>
+                        <tr>
+                                <td>Homme à pied</td>
+                                <td>0 - 10</td>
+                        </tr>
+                        <tr>
+                                <td>Cheval pur-sang</td>
+                                <td>10 - 65</td>
+                        </tr>   
+                        <tr>
+                                <td>Voiture ferrari</td>
+                                <td>65 - 325</td>
+                        </tr>
+                        <tr>
+                                <td>Avion jet </td>
+                                <td>325 - 740</td>
+                        </tr>
+                        <tr>
+                                <td>Avion de ligne A380 </td>
+                                <td>740 - 1185</td>
+                        </tr>
+                        <tr>
+                                <td>fusée Apollo 11 </td>
+                                <td> 1185 - 5500</td>
+                        </tr>
+                        </table>
+                <input type="button" class="sim_button" id="test" value = "Simulate">
+                <p>Time : <span id="time" class="time"></span></p>
+                <p>La vitesse choisie est similaire à celle d'un(e) : <span id="vehicules"> </span></p>
+                
+                
+            
+        </div>  
+    </main>
+
+
+        
         <script src="js/voyage.js"></script>
 </body> 
