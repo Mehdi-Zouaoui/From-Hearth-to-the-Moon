@@ -12,36 +12,41 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -50,260 +55,283 @@ table {
 /*************/
 
 
+header {
+    height: 7rem;
 
-header  {
-      height : 7rem; 
-  
 }
+
 .index_header {
-    display:flex;
+    display: flex;
     flex-direction: column;
     height: 50rem;
     background-image: url("/images/earth_2.jpg");
     background-size: cover;
-    background-position : center;
+    background-position: center;
     background-repeat: no-repeat;
 
-    
-    
+
 }
 
 
 header .home_links {
 
-        width : 100vw;
-        height : 8rem;
-        background-color: rgba(0, 0, 0 , 0.7);
-        position : fixed
+    width: 100vw;
+    height: 8rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed
 }
+
 header .home_links img {
-        text-align: center;
+    text-align: center;
 }
 
-header .home_links a{
-        display: inline-block;
-        font-family: 'Archivo Narrow', sans-serif;
-        color : grey;
-        padding: 1rem ;
-        margin : 2rem;
-        font-size: 1rem;
-        text-decoration: none;
-        
+header .home_links a {
+    display: inline-block;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: grey;
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+
 }
+
 header .home_links a:hover {
-         text-decoration: underline white;;
+    text-decoration: underline white;;
 }
 
-header .home_links #fromEtoM{
-    margin-right: 3rem;  
+header .home_links #fromEtoM {
+    margin-right: 3rem;
     font-size: 1.4rem;
 }
+
 .center_texte {
     color: white;
-    display : flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Archivo Narrow', sans-serif;
 }
+
 header .center_texte h1 {
     font-size: 32px;
-    margin-top : 15rem;
+    margin-top: 15rem;
     letter-spacing: 1rem;
-    
-    
-}
-header .center_texte p {
-   text-align: center;
-    margin-top : 2rem;
-    width : 80%;
-    font-size: 24px;
-    letter-spacing: 0.5rem;
-   
+
+
 }
 
+header .center_texte p {
+    text-align: center;
+    margin-top: 2rem;
+    width: 80%;
+    font-size: 24px;
+    letter-spacing: 0.5rem;
+
+}
 
 
 body {
-    
-    height : 100rem;
+
+    height: 100rem;
     background-image: url("/images/stars-1920x1080.jpg");
     background-size: contain;
 }
 
 main {
-    color : white;  
-    display : flex;
-    flex-direction: column  ;
-    font-family: 'Archivo Narrow', sans-serif;
-    
-}
-.begin_circle {
-    position: absolute;
-    margin-left : 48vw;
-    border:2px solid black; 
-    background:white;
-    border-radius:50%;
-    width : 4rem;
-    height: 4rem;
- 
-    
-}
-.ligne_verticale{
-    
-    margin-top: 2rem;
-    margin-left: 50vw;
-    position: absolute;
-    height:102rem;
-    border-left:8px dashed rgba(255, 255, 255 , 0.8);
-   
-}
-.ending_circle {
-    position: absolute;
-    margin-left: 48vw;
-    margin-top: 102rem;
-    background:white;
-    border-radius:50%;
-    width : 4rem;
-    height: 4rem;
-    border:2px solid black; 
-}
-.JulesVerne {
-    display : flex;
-    align-self: flex-end;
+    color: white;
+    display: flex;
     flex-direction: column;
-    width :50%;
-    margin-right : 10%;
-   
+    font-family: 'Archivo Narrow', sans-serif;
+
 }
 
-.JulesVerne img{
-    align-self: flex-end;
-    margin-right : 4rem;
+.begin_circle {
+    position: absolute;
+    border: 2px solid black;
+    background: white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
-.JulesVerne h1{
+
+.ligne_verticale {
+
+    margin-top: 2rem;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    height: 102rem;
+    border-left: 8px dashed rgba(255, 255, 255, 0.8);
+
+}
+
+.ending_circle {
+    position: absolute;
+    margin-top: 102rem;
+    background: white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid black;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.JulesVerne {
+    display: flex;
     align-self: flex-end;
-    margin-top : 2rem;
-    margin-right :1rem;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 10%;
+
+}
+
+.JulesVerne img {
+    align-self: flex-end;
+    margin-right: 4rem;
+}
+
+.JulesVerne h1 {
+    align-self: flex-end;
+    margin-top: 2rem;
+    margin-right: 1rem;
     font-size: 2rem;
     text-align: center;
     letter-spacing: 1rem;
 }
-.JulesVerne p{
-    margin-top : 2rem;
-    width : 20rem;
+
+.JulesVerne p {
+    margin-top: 2rem;
+    width: 20rem;
     align-self: flex-end;
     font-size: 1rem;
     letter-spacing: 0.5rem;
     text-align: center;
-    
-    
+
+
 }
+
 .JV_txt {
     font-weight: 1000;
     font-style: italic;
 }
-.Apollo_txt{
+
+.Apollo_txt {
     font-weight: 1000;
     font-style: italic;
 
 }
-.La_chine{
-    display : flex;
+
+.La_chine {
+    display: flex;
     align-self: flex-end;
     flex-direction: column;
-    width :50%;
-    margin-right : 10%;
+    width: 50%;
+    margin-right: 10%;
 }
-.La_chine p{
-    width : 20rem;
-    margin-top : 2rem;
+
+.La_chine p {
+    width: 20rem;
+    margin-top: 2rem;
     align-self: flex-end;
     font-size: 1rem;
     letter-spacing: 0.5rem;
     text-align: center;
 }
-.La_chine img{
+
+.La_chine img {
     align-self: flex-end;
-    margin-right : 2rem;
-    
+    margin-right: 2rem;
+
 }
-.La_chine h1{
+
+.La_chine h1 {
     align-self: flex-end;
-    margin-top : 2rem;
-    margin-right :2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
     font-size: 2rem;
     text-align: center;
     letter-spacing: 1rem;
-    
+
 }
+
 .Apollo {
-    display : flex;
+    display: flex;
     align-self: flex-start;
     flex-direction: column;
-    width :50%;
-    margin-left : 5%;
+    width: 50%;
+    margin-left: 5%;
 }
-.Apollo p{
-    width : 20rem;
-    margin-top : 2rem;
+
+.Apollo p {
+    width: 20rem;
+    margin-top: 2rem;
     align-self: flex-start;
     font-size: 1rem;
     letter-spacing: 0.5rem;
     text-align: center;
-    
+
 }
-.Apollo img{
+
+.Apollo img {
     align-self: flex-start;
-    margin-left : 4rem;
-    
+    margin-left: 4rem;
+
 }
-.Apollo h1{
+
+.Apollo h1 {
     align-self: flex-start;
-    margin-top : 2rem;
-    margin-left :5rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
     font-size: 2rem;
     text-align: center;
     letter-spacing: 1rem;
 }
 
-footer{
-  
+footer {
+
     background-image: url("images/moon.jpg");
     background-size: cover;
     height: 40rem;
-    width : 100vw;
+    width: 100vw;
     font-family: 'Archivo Narrow', sans-serif;
-    color : grey;
+    color: grey;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-   
+
 }
 
-footer .footer_imgs  {
-   text-align: center;
+footer .footer_imgs {
+    text-align: center;
 }
 
 
-footer p{
+footer p {
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-    margin-top : 5rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
 
     align-self: center;
-    color : white;
+    color: white;
     font-size: 1rem;
     text-align: center;
     letter-spacing: 1rem;
-    width : 50%;
+    width: 50%;
 }
+
 .slidecontainer {
     width: 50%; /* Width of the outside container */
-  }
-  
-  /* The slider itself */
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none; /* Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
     height: 25px; /* Specified height */
@@ -312,77 +340,80 @@ footer p{
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
-  }
-  
-  /* Mouse-over effects */
-  .slider:hover {
+}
+
+/* Mouse-over effects */
+.slider:hover {
     opacity: 1; /* Fully shown on mouse-over */
-  }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
-  .slider::-webkit-slider-thumb {
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
     width: 25px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
+}
+
+.slider::-moz-range-thumb {
     width: 25px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
-  }
- 
-  .voyage{
-      margin-top : 10rem;
-      display: flex ;
-      flex-direction: row;
-      font-family: 'Archivo Narrow', sans-serif;
-    
-  }
-  .voyage_txt {
+}
+
+.voyage {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Archivo Narrow', sans-serif;
+
+}
+
+.voyage_txt {
     justify-content: flex-start;
-    color : white;
-    width : 40%;
+    color: white;
+    width: 40%;
     letter-spacing: 0.2rem;
     margin-left: 4rem;
 
-  }
-  .slidecontainer  {
+}
 
-      justify-content: flex-end;
-      display: flex ; 
-      flex-direction: column;
-      color : white;
-     
-  }
-  
-  
-  table {
-        margin-top : 1.5rem;
-        margin-bottom : 1.5rem;
-        border: medium solid white; 
-        width: 100%;
-        }
+.slidecontainer {
+
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+
+table {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: medium solid white;
+    width: 100%;
+}
 
 td, th {
-        padding-left : 1rem;
-        border: thin solid white ;
-        width: 70%;
-        font-size: 1.2rem;
-       
+    padding-left: 1rem;
+    border: thin solid white;
+    width: 70%;
+    font-size: 1.2rem;
+
 }
-p{
-  
-  margin-top: 2rem;
-  width: 25rem;
-  justify-content: center;
-  font-size: 1.2rem;
-    
-  
+
+p {
+
+    margin-top: 2rem;
+    width: 25rem;
+    justify-content: center;
+    font-size: 1.2rem;
+
+
 }
 
 
